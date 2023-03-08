@@ -11,6 +11,7 @@ export const listImage = async (req, res)=> {
       fs.writeFileSync('./dbimages/'+namefile,img.data)
       // namefiles.push(namefile)
       images.push({
+        id : img.id,
         namefile : namefile,
         titulo : img.titulo,
         descripcion : img.descripcion,
